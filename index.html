@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="main-form" action="#">
+        <h1 class="question-1">What does CSS stand for?</h1>
+        <h2 class="live-time">30:00</h2>
+        <div class="answers">
+            <div class="first-answer">
+                <input type="radio" id="first" name="first-answer">
+                <label for="first" id="answer-text-1">Colorful Style Sheets</label>
+            </div>
+
+            <div class="second-answer">
+                <input type="radio" id="second" name="first-answer">
+                <label for="second" id="answer-text-2">Creative Style Sheets</label>
+            </div>
+
+            <div class="third-answer">
+                <input type="radio" id="third" name="first-answer">
+                <label for="third" id="answer-text-3">Computer Style Sheets</label>
+            </div>
+
+            <div class="fourth-answer">
+                <input type="radio" id="fourth" name="first-answer">
+                <label for="fourth" id="answer-text-4">Cascading Style Sheets</label>   
+            </div>
+
+        </div>
+        <p class="current">Current Question: 1/10</p>
+        <button class="submit" role="button">Next</button>
+        <button class="submit2" role="button">Next</button>
+        <button class="submit3" role="button">Next</button>
+        <button class="submit4" role="button">Next</button>
+        <button class="submit5" role="button">Next</button>
+        <button class="submit6" role="button">Next</button>
+        <button class="submit7" role="button">Next</button>
+        <button class="submit8" role="button">Next</button>
+        <button class="submit9" role="button">Next</button>
+        <button class="submit10" role="button">Submit</button>
+    </form>
+
+    <div class="decoration-1"></div>
+    <div class="decoration-2"></div>
+
+
+    <div class="submit-form">
+        <h1>Your Result:</h1>
+        <p class="final-score"></p>
+        <h2 class="final-procent"></h2>
+        <h5 class="final-text"></h5>
+        <h3>Time Left:</h3>
+        <h4 class="time-left"></h4>
+        <div class="buttons">
+            <button class="try-again" role="button">Try again</button>
+            <button class="check-result" role="button">Check result</button>  
+        </div>
+    </div>
+
+
+    <div class="time-left-form">
+        <h1>Sorry your time is up</h1>
+        <h2>You can try again!</h2>
+        <button class="try-again-1" role="button">Try again</button>
+    </div>
+
+    
+    <div class="check-result-form">
+        <div class="first-question all-question">
+            <h1 class="question-asked">1) What does CSS stand for?</h1>
+            <h2 class="answered-all answered-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) Colorful Style Sheets</h2>
+            <h2 class="answered-all answered-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) Creative Style Sheets</h2>
+            <h2 class="answered-all answered-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) Computer Style Sheets</h2>
+            <h2 class="answered-all answered-4 correct"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) Cascading Style Sheets</h2>
+        </div>
+
+        <div class="second-question all-question">
+            <h1 class="question-asked-2">2) How do you insert a comment in a CSS file?</h1>
+            <h2 class="answered-all answered-2-1 "><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) // this is a comment</h2>
+            <h2 class="answered-all answered-2-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) 'this is a comment</h2>
+            <h2 class="answered-all answered-2-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) // this is a comment //</h2>
+            <h2 class="answered-all answered-2-4 correct"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) /* this is a comment */</h2>
+        </div>
+
+        <div class="third-question all-question">
+            <h1 class="question-asked-3">3) Which HTML attribute is used to define inline styles?</h1>
+            <h2 class="answered-all answered-3-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) class</h2>
+            <h2 class="answered-all answered-3-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) font</h2>
+            <h2 class="answered-all answered-3-3 correct"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) styles</h2>
+            <h2 class="answered-all answered-3-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) style</h2>
+        </div>
+
+        <div class="fourth-question all-question">
+            <h1 class="question-asked-4">4) Which CSS property controls the text size?</h1>
+            <h2 class="answered-all answered-4-1 correct"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) font-size</h2>
+            <h2 class="answered-all answered-4-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) font-style</h2>
+            <h2 class="answered-all answered-4-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) text-size</h2>
+            <h2 class="answered-all answered-4-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) text-style</h2>
+        </div>
+
+        <div class="fifth-question all-question">
+            <h1 class="question-asked-5">5) How do you display hyperlinks without an underline?</h1>
+            <h2 class="answered-all answered-5-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) a {decoration:no-underline;}</h2>
+            <h2 class="answered-all answered-5-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) a {underline:none;}</h2>
+            <h2 class="answered-all answered-5-3 correct"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) a {text-decoration:none;}</h2>
+            <h2 class="answered-all answered-5-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) a {text-decoration:no-underline;}</h2>
+        </div>
+
+        <div class="sixth-question all-question">
+            <h1 class="question-asked-6">6) How do you select an element with id 'demo'?</h1>
+            <h2 class="answered-all answered-6-1 correct"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) #demo</h2>
+            <h2 class="answered-all answered-6-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) demo</h2>
+            <h2 class="answered-all answered-6-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) *demo</h2>
+            <h2 class="answered-all answered-6-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) .demo</h2>
+        </div>
+
+        <div class="seventh-question all-question">
+            <h1 class="question-asked-7">7) How do you select elements with class name 'test'?</h1>
+            <h2 class="answered-all answered-7-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) #test</h2>
+            <h2 class="answered-all answered-7-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) *test</h2>
+            <h2 class="answered-all answered-7-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) test</h2>
+            <h2 class="answered-all answered-7-4 correct"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) .test</h2>
+        </div>
+
+        <div class="eight-question all-question">
+            <h1 class="question-asked-8">8) What is the default value of the position property?</h1>
+            <h2 class="answered-all answered-8-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) relative</h2>
+            <h2 class="answered-all answered-8-2 correct"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) static</h2>
+            <h2 class="answered-all answered-8-3"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) absolute</h2>
+            <h2 class="answered-all answered-8-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) fixed</h2>
+        </div>
+        
+        <div class="ninth-question all-question">
+            <h1 class="question-asked-9">9) How do you make a text start with a capital letter?</h1>
+            <h2 class="answered-all answered-9-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) transform:capitalize</h2>
+            <h2 class="answered-all answered-9-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) You can\'t do that with CSS</h2>
+            <h2 class="answered-all answered-9-3 correct"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) text-transform:capitalize</h2>
+            <h2 class="answered-all answered-9-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) text-style:capitalize</h2>
+        </div>
+        
+        <div class="tenth-question all-question">
+            <h1 class="question-asked-10">10) Which tag is used to define an internal style sheet?</h1>
+            <h2 class="answered-all answered-10-1"><ion-icon name="checkmark-circle-outline" class="icon-1"></ion-icon>A) &#60;css&#62;</h2>
+            <h2 class="answered-all answered-10-2"><ion-icon name="checkmark-circle-outline" class="icon-2"></ion-icon>B) &#60;style&#62;</h2>
+            <h2 class="answered-all answered-10-3 correct"><ion-icon name="checkmark-circle-outline" class="icon-3"></ion-icon>C) &#60;script&#62;</h2>
+            <h2 class="answered-all answered-10-4"><ion-icon name="checkmark-circle-outline" class="icon-4"></ion-icon>D) &#60;link&#62;</h2>
+        </div>
+
+    </div>
+
+</body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
